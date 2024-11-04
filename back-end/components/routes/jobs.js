@@ -1,5 +1,5 @@
 import express from 'express';
-import dbPromise from './database.js'; // Assurez-vous que le chemin est correct
+import dbPromise from './database.js';
 
 const router = express.Router();
 router.use(express.json()); // Middleware pour parser le JSON des requêtes
@@ -19,7 +19,7 @@ router.get('/jobs', async (req, res) => {
 // Route pour récupérer tous les jobs
 router.get('/admin/jobs', async (req, res) => {
     try {
-        const db = await dbPromise; // Attendez que la promesse de base de données soit résolue
+        const db = await dbPromise;
         const jobs = await db.all('SELECT * FROM detail_jobs'); // Récupérer tous les jobs
         res.json(jobs); // Retourner les jobs au format JSON
     } catch (err) {
@@ -55,7 +55,7 @@ router.post('/admin/jobs', async (req, res) => {
     }
 
     try {
-        const db = await dbPromise; // Attendez que la promesse de base de données soit résolue
+        const db = await dbPromise;
         const result = await db.run(
             `INSERT INTO detail_jobs (job_name, name_company, note, city, duration, poste_details, address, 
             description_company, description_poste, qualifications, skills, languages, additional_expected_domains, 
@@ -100,7 +100,7 @@ router.put('/admin/jobs/:id', async (req, res) => {
     }
 
     try {
-        const db = await dbPromise; // Attendez que la promesse de base de données soit résolue
+        const db = await dbPromise;
         const query = `UPDATE detail_jobs SET 
             job_name = ?, 
             name_company = ?, 
@@ -152,7 +152,7 @@ router.delete('/admin/jobs/:id', async (req, res) => {
     const { id } = req.params; // Récupérer l'ID du job à supprimer
 
     try {
-        const db = await dbPromise; // Attendez que la promesse de base de données soit résolue
+        const db = await dbPromise;
         const query = `DELETE FROM detail_jobs WHERE id = ?`; // Requête SQL pour supprimer un job
         
         const result = await db.run(query, [id]); // Exécution de la requête

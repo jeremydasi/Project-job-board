@@ -1,14 +1,14 @@
 import express from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { User } from '../models/index.js'; // Assurez-vous que ce chemin est correct
+import { User } from '../models/index.js';
 
 const router = express.Router();
-const JWT_SECRET = 'votre_clé_secrète'; // Changez cela pour une clé plus sécurisée en production
+const JWT_SECRET = 'votre_clé_secrète';
 
 // Identifiants statiques pour l'administrateur
 const ADMIN_EMAIL = 'admin@test.com';
-const ADMIN_PASSWORD = 'adminpassword'; // Assurez-vous que ce mot de passe est sécurisé
+const ADMIN_PASSWORD = 'adminpassword';
 
 // Route d'inscription
 router.post('/client', async (req, res) => {

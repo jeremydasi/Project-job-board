@@ -1,7 +1,7 @@
 import express from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import dbPromise from './database.js'; // Assurez-vous que le chemin est correct
+import dbPromise from './database.js';
 
 const router = express.Router();
 const JWT_SECRET = 'votre_clé_secrète';
@@ -19,7 +19,7 @@ const createDefaultAdmin = async (db) => {
         );
     `;
 
-    await db.run(query); // Créez la table si elle n'existe pas
+    await db.run(query);
 
     const existingAdmin = await db.get("SELECT * FROM administrateur WHERE admin_mail = ?", ['admin@example.com']);
 
@@ -70,7 +70,7 @@ router.post('/signup', async (req, res) => {
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
 
-    const db = await dbPromise; // Obtenez l'instance de la base de données
+    const db = await dbPromise;
 
     try {
         const admin = await db.get("SELECT * FROM administrators WHERE admin_mail = ?", [email]);

@@ -1,7 +1,7 @@
 import { Sequelize } from 'sequelize';
 import path from 'path';
-import UserModel from './userModel.js'; // Import du modèle User
-import AdministrateurModel from './administrateurModel.js'; // Import du modèle Administrateur
+import UserModel from './userModel.js';
+import AdministrateurModel from './administrateurModel.js';
 
 // Création de l'instance Sequelize
 const sequelize = new Sequelize({
