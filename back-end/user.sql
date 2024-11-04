@@ -41,15 +41,6 @@ CREATE TABLE IF NOT EXISTS detail_jobs (
     FOREIGN KEY (entreprise_id) REFERENCES entreprise (id)
 );
 
-CREATE TABLE IF NOT EXISTS propositions (
-    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    description_poste TEXT NOT NULL,
-    salary VARCHAR(255),
-    publication_date VARCHAR(255) NOT NULL,
-    administrateur_id INTEGER,
-    FOREIGN KEY (administrateur_id) REFERENCES administrateur (id)
-);
-
 CREATE TABLE IF NOT EXISTS administrateur (
     id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     admin_firstname VARCHAR(255) NOT NULL,
