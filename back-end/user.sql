@@ -49,13 +49,3 @@ CREATE TABLE IF NOT EXISTS administrateur (
     admin_password VARCHAR(255) NOT NULL,
     name_company VARCHAR(255) NOT NULL
 );
-
-CREATE TABLE IF NOT EXISTS resumes (
-    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    file_name VARCHAR(255) NOT NULL,
-    file_type VARCHAR(50) NOT NULL,
-    file_path TEXT NOT NULL,
-    upload_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    user_id INTEGER,
-    FOREIGN KEY (user_id) REFERENCES users (id)
-);
