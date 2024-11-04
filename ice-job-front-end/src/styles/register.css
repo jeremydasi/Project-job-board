@@ -1,0 +1,70 @@
+.containerPageRegister {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerRegister {
+  width: 900px;
+  height: 881px;
+  background-color: white;
+  border-radius: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttonRegister {
+  margin-left: 24px;
+}
+
+.containerButton.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.containerFormRegister {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.containerInputRegister {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contract {
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.error {
+  color: #ff4d4d;
+  background-color: #ffe6e6;
+  border: 1px solid #ff1a1a;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,75 @@
+.Header {
+    background-color: #90EBF5;
+    padding: 30px;
+}
+
+.Header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.Header nav input {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px;
+    width: 391px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.Header nav ul li {
+    margin-left: 20px;
+}
+
+.Header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.Header nav ul li a:hover {
+    color: #000000;
+}
+
+
+.Header .logo {
+    height: 70px;
+    width: 85px;
+    margin-right: 20px;
+}
+
+.Header .logo-text {
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    align-self: center; 
+    font-family: 'Post No Bills Colombo', sans-serif;
+}
+
+@font-face {
+    font-family: 'Post No Bills Colombo';
+    src: url('../font/Post\ No\ Bills\ Colombo\ ExtraBold.woff2') format('woff2'),
+         url('../font/Post\ No\ Bills\ Colombo\ ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.slogan{
+    text-align: center;
+    color: white;
+}

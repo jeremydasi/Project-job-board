@@ -1,0 +1,86 @@
+.admin-container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .add-job-form,
+  .edit-job-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-job-form input,
+  .edit-job-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .job-list-section {
+    margin-top: 30px;
+  }
+  
+  .job-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .job-table th, 
+  .job-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .job-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .job-table td button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  .job-table td button:hover {
+    background-color: #0056b3;
+  }
+  
+  .job-table td button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .job-table td button:last-child:hover {
+    background-color: #c82333;
+  }
+  

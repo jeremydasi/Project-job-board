@@ -1,0 +1,139 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.job-list-section {
+    flex: 1;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-right: 20px;
+}
+
+.header {
+    font-size: 14px;
+    color: #333;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.job-item {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.job-item:hover {
+    background-color: #b2ebf2;
+}
+
+
+.job-details-section {
+    flex: 2;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.job-details .section {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2%;
+}
+
+
+.job-header {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.apply-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-btn {
+    background-color: #1100FF;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.apply-btn:hover {
+    background-color: black;
+    color:white;
+    transform: scale(1.02);
+}
+
+
+h2, h3, h4 {
+    color: #3f51b5;
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
+    text-align: left;
+}
+
+
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills, .languages {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.star-icon {
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .star-icon.filled {
+    color: gold;
+  }
+  
+  .star-icon.empty {
+    color: gray;
+  }
+  

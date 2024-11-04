@@ -1,0 +1,10 @@
+a {
+    font-size: 30px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.containerButton {
+    display: flex;
+    flex-direction: row;
+}

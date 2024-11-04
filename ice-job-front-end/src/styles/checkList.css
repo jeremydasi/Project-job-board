@@ -1,0 +1,15 @@
+.containerCheck {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.titleCheck {
+    font-size: 15px;
+}
+
+.inputCheck {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}

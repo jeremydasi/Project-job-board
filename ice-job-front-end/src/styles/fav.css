@@ -1,0 +1,70 @@
+.fav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  .fav-header {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .fav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+
+  .fav-job {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .fav-job:hover {
+    transform: scale(1.02);
+  }
+  
+
+  .fav-job h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+
+  .fav-job p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .fav-empty-message {
+    font-size: 16px;
+    color: #666;
+    margin-top: 18%;
+    margin-left:37%;
+  }
+  
+
+  .fav-container Header {
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+
+  header {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
