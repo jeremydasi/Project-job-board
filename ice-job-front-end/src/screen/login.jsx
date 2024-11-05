@@ -77,7 +77,7 @@ function Login() {
     }
   }, [navigate]);
 
-  // Vérifier si on est sur la page de connexion
+  // Vérifie si on est sur la page de connexion
   const isLoginActive = window.location.pathname === "/login";
 
   return (
