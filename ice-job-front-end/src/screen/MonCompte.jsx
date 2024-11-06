@@ -10,7 +10,7 @@ const MonCompte = () => {
   // Function to fetch user information
   useEffect(() => {
     const fetchUser = async () => {
-      const token = localStorage.getItem("token"); // Ensure token is stored and accessible
+      const token = localStorage.getItem("token");
 
       if (!token) {
         setError("Utilisateur non connecté. Veuillez vous connecter.");
@@ -101,7 +101,7 @@ const MonCompte = () => {
             setError("Erreur lors de la mise à jour des informations.");
         } else {
             const result = await response.json();
-            setUser(result.user); // Met à jour l'état avec les nouvelles informations
+            setUser(result.user);
             alert("Informations mises à jour avec succès !");
         }
     } catch (error) {
@@ -111,7 +111,6 @@ const MonCompte = () => {
 };
 
 
-  // Render error or loading state
   if (error) {
     return <p>{error}</p>;
   }
